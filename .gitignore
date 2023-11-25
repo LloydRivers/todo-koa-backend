@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+package-lock.json
+.env
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+# (https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git)
+/npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
