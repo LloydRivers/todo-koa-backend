@@ -1,7 +1,7 @@
 import { Context } from "koa";
-import hasMessage from "../helpers/hasMessage.ts";
-import signupValidator from "../validator/signup-validator.ts";
-import saveUserDataToDatabase from "../controllers/post.ts";
+import hasMessage from "../../helpers/hasMessage.ts";
+import signupValidator from "../../validator/signup-validator.ts";
+import saveUserDataToDatabase from "../../controllers/post.ts";
 
 const handleSignup = async (ctx: Context) => {
   try {
