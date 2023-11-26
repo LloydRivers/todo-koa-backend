@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from 'bcrypt';
 
 export const hashPassword = async (password: string): Promise<string> => {
   try {
@@ -6,6 +6,6 @@ export const hashPassword = async (password: string): Promise<string> => {
     const hashedPassword = await bcrypt.hash(password, salt);
     return hashedPassword;
   } catch (error) {
-    throw new Error("Error hashing password");
+    throw new Error('Error hashing password');
   }
 };

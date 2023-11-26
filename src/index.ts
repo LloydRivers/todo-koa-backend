@@ -1,7 +1,7 @@
-import Koa from "koa";
-import bodyParser from "koa-bodyparser";
-import signupRouter from "./routes/signup.ts";
-import loginRouter from "./routes/login.ts";
+import Koa from 'koa';
+import bodyParser from 'koa-bodyparser';
+import signupRouter from './routes/signup.ts';
+import loginRouter from './routes/login.ts';
 
 const app = new Koa();
 app.use(bodyParser());

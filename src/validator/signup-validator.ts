@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 const signupValidator = z.object({
   name: z
@@ -6,14 +6,14 @@ const signupValidator = z.object({
     .min(1)
     .max(100)
     .regex(/^[a-zA-Z\s]+$/, {
-      message: "Name must only contain letters and spaces",
+      message: 'Name must only contain letters and spaces',
     }),
   surname: z
     .string()
     .min(1)
     .max(100)
     .regex(/^[a-zA-Z\s]+$/, {
-      message: "Surname must only contain letters and spaces",
+      message: 'Surname must only contain letters and spaces',
     }),
   email: z.string().email(),
   password: z
@@ -21,8 +21,7 @@ const signupValidator = z.object({
     .min(6)
     .max(100)
     .regex(/^(?=.*[A-Z])(?=.*[@£$%]).*$/, {
-      message:
-        "Password must contain at least one uppercase letter and one special character",
+      message: 'Password must contain at least one uppercase letter and one special character',
     }),
 });
 
