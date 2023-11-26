@@ -32,7 +32,11 @@
     {
       "files": ["**/*.ts", "**/*.tsx"],
       "parser": "@typescript-eslint/parser",
-      "extends": ["plugin:@typescript-eslint/recommended"]
+      "extends": ["plugin:@typescript-eslint/recommended"],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      },
+      "excludedFiles": ["src/**/*.test.ts", "node_modules", "dist", "jest.config.ts"]
     }
   ],
   "parserOptions": {
