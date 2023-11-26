@@ -2,6 +2,7 @@
 CREATE TABLE "User" (
     "id" UUID NOT NULL,
     "name" STRING NOT NULL,
+    "surname" STRING NOT NULL,
     "email" STRING NOT NULL,
     "password" STRING NOT NULL,
 
