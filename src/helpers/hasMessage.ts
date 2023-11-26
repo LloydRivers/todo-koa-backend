@@ -1,9 +1,9 @@
-const hasMessage = (x: unknown): x is { message: string } =>
+const hasMessage = (value: unknown): value is { message: string } =>
   Boolean(
-    typeof x === "object" &&
-      x &&
-      "message" in x &&
-      typeof x.message === "string"
+    typeof value === "object" &&
+      value &&
+      "message" in value &&
+      typeof value.message === "string"
   );
 
 export default hasMessage;
