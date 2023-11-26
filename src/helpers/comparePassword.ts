@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 
-export const comparePassword = async (
+const comparePassword = async (
   enteredPassword: string,
   hashedPassword: string
 ): Promise<boolean> => {
@@ -14,3 +14,5 @@ export const comparePassword = async (
     throw new Error("Error comparing passwords");
   }
 };
+
+export default comparePassword;
